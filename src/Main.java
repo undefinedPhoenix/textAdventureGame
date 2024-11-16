@@ -119,9 +119,7 @@ public class Main {
                     buying = false;
                     playGame();
                 }
-                default -> {
-                    System.out.println("Invalid choice. Try again.");
-                }
+                default -> System.out.println("Invalid choice. Try again.");
             }
         }
     }
@@ -202,13 +200,9 @@ public class Main {
                     System.out.println("220$ received");
                     rest();
                 }
-                default -> {
-                    System.out.println("Invalid choice, choose again");
-                }
+                default -> System.out.println("Invalid choice, choose again");
             }
         }
-
-
     }
 
     // kfc
@@ -233,7 +227,7 @@ public class Main {
         int slimeHealth = 120;
         boolean sword = inventory.contains("Great Sword");
         boolean ak47 = inventory.contains("Ak47");
-        boolean hp = inventory.contains("Health Potion");
+        boolean hp;
         String ownSword = sword ? "2=[Great Sword]  " : "";
         String ownAk = ak47 ? "3=[ak47]" : "" ;
         System.out.println("-----------------------------------------------------------------------------------------");
@@ -328,9 +322,7 @@ public class Main {
                         System.out.println("You have no health potion...");
                     }
                 }
-                default -> {
-                    System.out.println("Invalid choice, choose again");
-                }
+                default -> System.out.println("Invalid choice, choose again");
             }
         }
 
